@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B02BEDD91E27385F002E013C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02BEDD81E27385F002E013C /* AppDelegate.swift */; };
-		B02BEDDB1E27385F002E013C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02BEDDA1E27385F002E013C /* ViewController.swift */; };
 		B02BEDDE1E27385F002E013C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02BEDDC1E27385F002E013C /* Main.storyboard */; };
 		B02BEDE01E27385F002E013C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02BEDDF1E27385F002E013C /* Assets.xcassets */; };
 		B02BEDE31E27385F002E013C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02BEDE11E27385F002E013C /* LaunchScreen.storyboard */; };
 		B02BEDEE1E27385F002E013C /* QiitaViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02BEDED1E27385F002E013C /* QiitaViewerTests.swift */; };
 		B02BEDF91E27385F002E013C /* QiitaViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02BEDF81E27385F002E013C /* QiitaViewerUITests.swift */; };
+		B0792B8E1E27AE840008C5C7 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0792B8D1E27AE840008C5C7 /* SubViewController.swift */; };
+		B0792B901E27BBC80008C5C7 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0792B8F1E27BBC80008C5C7 /* CustomTableViewCell.swift */; };
+		B0792B921E27BCEA0008C5C7 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0792B911E27BCEA0008C5C7 /* Article.swift */; };
+		B0ECB0B11E2739BB00F5B233 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ECB0AF1E2739BB00F5B233 /* Alamofire.framework */; };
+		B0ECB0B21E2739BB00F5B233 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ECB0B01E2739BB00F5B233 /* SwiftyJSON.framework */; };
+		B0ECB0B51E273A0A00F5B233 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB0B41E273A0A00F5B233 /* ArticleListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		B02BEDD51E27385F002E013C /* QiitaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02BEDD81E27385F002E013C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B02BEDDA1E27385F002E013C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B02BEDDD1E27385F002E013C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B02BEDDF1E27385F002E013C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B02BEDE21E27385F002E013C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		B02BEDF41E27385F002E013C /* QiitaViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02BEDF81E27385F002E013C /* QiitaViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewerUITests.swift; sourceTree = "<group>"; };
 		B02BEDFA1E27385F002E013C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0792B8D1E27AE840008C5C7 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		B0792B8F1E27BBC80008C5C7 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		B0792B911E27BCEA0008C5C7 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		B0ECB0AF1E2739BB00F5B233 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B0ECB0B01E2739BB00F5B233 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		B0ECB0B41E273A0A00F5B233 /* ArticleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0ECB0B11E2739BB00F5B233 /* Alamofire.framework in Frameworks */,
+				B0ECB0B21E2739BB00F5B233 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,7 @@
 				B02BEDEC1E27385F002E013C /* QiitaViewerTests */,
 				B02BEDF71E27385F002E013C /* QiitaViewerUITests */,
 				B02BEDD61E27385F002E013C /* Products */,
+				B0ECB0AE1E2739BB00F5B233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +111,14 @@
 			isa = PBXGroup;
 			children = (
 				B02BEDD81E27385F002E013C /* AppDelegate.swift */,
-				B02BEDDA1E27385F002E013C /* ViewController.swift */,
 				B02BEDDC1E27385F002E013C /* Main.storyboard */,
 				B02BEDDF1E27385F002E013C /* Assets.xcassets */,
 				B02BEDE11E27385F002E013C /* LaunchScreen.storyboard */,
 				B02BEDE41E27385F002E013C /* Info.plist */,
+				B0ECB0B41E273A0A00F5B233 /* ArticleListViewController.swift */,
+				B0792B8D1E27AE840008C5C7 /* SubViewController.swift */,
+				B0792B8F1E27BBC80008C5C7 /* CustomTableViewCell.swift */,
+				B0792B911E27BCEA0008C5C7 /* Article.swift */,
 			);
 			path = QiitaViewer;
 			sourceTree = "<group>";
@@ -125,6 +141,15 @@
 			path = QiitaViewerUITests;
 			sourceTree = "<group>";
 		};
+		B0ECB0AE1E2739BB00F5B233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECB0AF1E2739BB00F5B233 /* Alamofire.framework */,
+				B0ECB0B01E2739BB00F5B233 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +160,7 @@
 				B02BEDD11E27385F002E013C /* Sources */,
 				B02BEDD21E27385F002E013C /* Frameworks */,
 				B02BEDD31E27385F002E013C /* Resources */,
+				B0ECB0B31E2739C200F5B233 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,6 +219,7 @@
 				TargetAttributes = {
 					B02BEDD41E27385F002E013C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2GDL46MR6Z;
 						ProvisioningStyle = Automatic;
 					};
 					B02BEDE81E27385F002E013C = {
@@ -254,13 +281,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0ECB0B31E2739C200F5B233 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B02BEDD11E27385F002E013C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B02BEDDB1E27385F002E013C /* ViewController.swift in Sources */,
+				B0792B8E1E27AE840008C5C7 /* SubViewController.swift in Sources */,
 				B02BEDD91E27385F002E013C /* AppDelegate.swift in Sources */,
+				B0792B901E27BBC80008C5C7 /* CustomTableViewCell.swift in Sources */,
+				B0ECB0B51E273A0A00F5B233 /* ArticleListViewController.swift in Sources */,
+				B0792B921E27BCEA0008C5C7 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +460,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GDL46MR6Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.takuyaokada.QiitaViewer;
@@ -424,6 +477,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2GDL46MR6Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.takuyaokada.QiitaViewer;
@@ -505,6 +563,7 @@
 				B02BEDFF1E27385F002E013C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B02BEE001E27385F002E013C /* Build configuration list for PBXNativeTarget "QiitaViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +572,7 @@
 				B02BEE021E27385F002E013C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B02BEE031E27385F002E013C /* Build configuration list for PBXNativeTarget "QiitaViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +581,7 @@
 				B02BEE051E27385F002E013C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
