@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0151A1C1E28C413004F4375 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0151A1B1E28C413004F4375 /* WebKit.framework */; };
 		B02BEDD91E27385F002E013C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02BEDD81E27385F002E013C /* AppDelegate.swift */; };
 		B02BEDDE1E27385F002E013C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02BEDDC1E27385F002E013C /* Main.storyboard */; };
 		B02BEDE01E27385F002E013C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02BEDDF1E27385F002E013C /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B0151A1B1E28C413004F4375 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B02BEDD51E27385F002E013C /* QiitaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02BEDD81E27385F002E013C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B02BEDDD1E27385F002E013C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0151A1C1E28C413004F4375 /* WebKit.framework in Frameworks */,
 				B0ECB0B11E2739BB00F5B233 /* Alamofire.framework in Frameworks */,
 				B0ECB0B21E2739BB00F5B233 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -144,6 +147,7 @@
 		B0ECB0AE1E2739BB00F5B233 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0151A1B1E28C413004F4375 /* WebKit.framework */,
 				B0ECB0AF1E2739BB00F5B233 /* Alamofire.framework */,
 				B0ECB0B01E2739BB00F5B233 /* SwiftyJSON.framework */,
 			);

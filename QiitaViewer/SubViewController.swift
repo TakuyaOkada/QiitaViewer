@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import WebKit
 
 class SubViewController: UIViewController{
-    @IBOutlet weak var webView: UIWebView!
+    var webView: WKWebView?
 
     @IBAction func back(_ sender: UIButton) {
         self.dismiss(animated: false, completion: nil)
@@ -21,11 +22,14 @@ class SubViewController: UIViewController{
         super.viewDidLoad()
     
         loadUrl()
+        self.view.addSubview(webView!)
     }
 
     func loadUrl() {
-        let requestURL = NSURL(string: selectedUrl)
-        let request = NSURLRequest(url: requestURL as! URL)
-        webView.loadRequest(request as URLRequest)
+        let requestURL = URL(string: selectedUrl)
+        let request = URLRequest(url: requestURL!)
+        
+        self.webView = WKWebView(frame: CGRect(x: 0, y: 70, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height - 70))
+        self.webView?.load(request)
     }
 }
