@@ -26,6 +26,6 @@ class SubViewController: UIViewController{
     func loadUrl() {
         let requestURL = NSURL(string: selectedUrl)
         let request = NSURLRequest(url: requestURL as! URL)
-        webView?.loadRequest(request as URLRequest)
+        webView.loadRequest(request as URLRequest)
     }
 }
